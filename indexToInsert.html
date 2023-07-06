@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function getIndexToIns(arr, num) {
+      let sortedArr = arr.slice().sort((a, b) => a - b); 
+      // this creates a sorted copy of the array
+      for (let i = 0; i < sortedArr.length; i++) {
+        if (sortedArr[i] >= num) {
+          return sortedArr.indexOf(sortedArr[i]);
+          //  Or simply return i;
+        }
+      }
+      return arr.length;
+    }
+    
+    getIndexToIns([40, 60], 50);
+    
+    console.log(getIndexToIns([], 3));
+  </script>
+</body>
+</html>
