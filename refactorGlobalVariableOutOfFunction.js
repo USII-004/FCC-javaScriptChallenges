@@ -28,7 +28,7 @@ function remove(bookName) {
 
 
 // the code below is the corrected FCC format for the solution.
-// study and understand the difference between mine and theirs.
+// study and understand the difference between mine and theirs.~~
 
 // The global variable
 const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
